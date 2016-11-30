@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="store">
+  <head>
+    <link rel="stylesheet" type="text/css" href="public/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="public/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="pages/home">Angular RecipeApp</a>
+          </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a ui-sref="home"> Home</a></li>
+            <li><a href="#explore"><i class="fa fa-shield"></i> Explore</a></li>
+            <li><a href="#about"><i class="fa fa-comment"></i> About</a></li>
+            <li><a href="#contact"><i class="fa fa-shield"></i> Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <div ui-view></div>
+    </div>
+    <script type="text/javascript" src="public/js/angular.min.js"> </script>
+    <script type="text/javascript" src="public/js/app.js"> </script>
+    <script src="//unpkg.com/angular-ui-router/release/angular-ui-router.min.js"> </script>
+  </body>
+</html>
